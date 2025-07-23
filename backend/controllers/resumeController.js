@@ -1,5 +1,5 @@
 import Resume from "../models/resumeModel.js";
-import fs from 'fs'
+import fs from 'fs';
 import path from 'path';
 
 export const createResume = async (req,res) => {
@@ -111,7 +111,7 @@ export const getUserResumes = async (req,res) =>{
 
 export const getResumeById = async (req,res)=>{ 
     try {
-        const resume = await Resume.findOne({_id:req.params.id, userId:req.user._id})
+        const resume = await Resume.findOne({_id:req.params.id, userId:req.user._id}) //userid is fetched from the middleware
         
         if(!resume){
             return res.status(404).json({

@@ -9,9 +9,9 @@ const resumeRouter = express.Router()
 
 
 resumeRouter.post('/',protect,createResume)
-resumeRouter.get('/',protect,getUserResumes)
-resumeRouter.get('/:id',protect,getResumeById)
-
+resumeRouter.get('/',protect,getUserResumes) //all resumes of user
+resumeRouter.get('/:id',protect,getResumeById)  //individual resume of user selection
+ 
 resumeRouter.put('/:id',protect,updateResume);
 resumeRouter.put('/:id/upload-images',protect,uploadResumeImages)
 
