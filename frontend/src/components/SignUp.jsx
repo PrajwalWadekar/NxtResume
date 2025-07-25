@@ -57,15 +57,15 @@ const SignUp = ({setCurrentPage}) => {
 
       {/* Form */}
       <form onSubmit={handleSignUp} className={styles.signupForm}>
-        <Input value={fullName} onChange={(target)=>setFullName(target.value)}
+        <Input value={fullName} onChange={(e) => setFullName(e.target.value)}
         label='Full Name' placeholder='John Doe'
         type='text'/>
 
-        <Input value={email} onChange={(target)=>setEmail(target.value)}
+        <Input value={email} onChange={(e)=>setEmail(e.target.value)}
         label='Email' placeholder='email@example.com'
         type='email'/>
 
-        <Input value={password} onChange={(target)=>setPassword(target.value)}
+        <Input value={password} onChange={(e)=>setPassword(e.target.value)}
         label='Password' placeholder='Min 8 characters'
         type='password'/>
 

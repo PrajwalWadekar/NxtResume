@@ -16,7 +16,7 @@ const Input = ({value, onChange, label, placeholder, type}) => {
         value={value}
         onChange={onChange}
         onFocus={() => setIsFocused(true)}
-        onBlurs={()=>setIsFocused(false)}
+        onBlur={()=>setIsFocused(false)}
         />
 
     {type==='password' && (

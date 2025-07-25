@@ -5,6 +5,8 @@ import axiosInstance from '../utils/axiosInstance';
 import { API_PATHS } from '../utils/apiPaths';
 
 import { authStyles as styles } from '../assets/dummystyle';
+import Input from './Inputs';
+import { validateEmail } from '../utils/helper';
 
 const Login = ({setCurrentPage}) => {
 
@@ -42,17 +44,51 @@ const Login = ({setCurrentPage}) => {
   }
   return (
     <div className={styles.container}>
-        <div className={styles.headerWrapper}>
-            <h3 className={styles.title}>Welcome Back</h3>
-            <p className={styles.subtitle}>
-                Sign in to continue building amazing resumes
-            </p>
-        </div>
+      <div className={styles.headerWrapper}>
+        <h3 className={styles.title}>Welcome Back</h3>
+        <p className={styles.subtitle}>
+          Sign in to continue building amazing resumes
+        </p>
+      </div>
 
-        
-      
+      {/* Form  */}
+
+      <form onSubmit={handleLogin} className={styles.form}>
+        <Input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          label="Email"
+          placeholder="email@example.com"
+          type="email"
+        />
+
+        <Input
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          label="Password"
+          placeholder="Min 8 characters"
+          type="password"
+        />
+
+        {error && <div className={styles.errorMessage}>{error}</div>}
+
+        <button type="submit" className={styles.submitButton}>
+          Sign In
+        </button>
+
+        <p className={styles.switchText}>
+          Don't have an account?{" "}
+          <button
+            onClick={() => setCurrentPage("signup")}
+            type="button"
+            className={styles.switchButton}
+          >
+            Sign Up
+          </button>
+        </p>
+      </form>
     </div>
-  )
+  );
 }
 
 export default Login

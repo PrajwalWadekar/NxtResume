@@ -33,3 +33,5 @@ export const ProfileInfoCard = () => {
         )
     )
 }
+
+//Resume summary cards 
