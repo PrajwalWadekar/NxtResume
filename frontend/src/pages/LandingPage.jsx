@@ -56,7 +56,7 @@ const LandingPage = () => {
             ) : (
               <button
                 className={landingPageStyles.desktopAuthButton}
-                onClick={() => setMobileMenuOpen(true)}
+                onClick={handleCTA}
               >
                 <div
                   className={landingPageStyles.desktopAuthButtonOverlay}
