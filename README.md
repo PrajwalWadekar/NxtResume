@@ -4,7 +4,10 @@ NxtResume is a full-stack resume builder web application built using the **MERN*
 
 ---
 
-[Live Demo 🔗](https://nxtresume-frontend.onrender.com)
+## 🌐 Live Demo
+
+Check out the live version of the app:  
+🔗 [NxtResume Live](https://nxtresume-frontend.onrender.com)
 
 ---
 
@@ -66,13 +69,16 @@ npm run dev
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page
-![Home Page](https://via.placeholder.com/1000x600.png?text=Home+Page)
+![Home Page](https://github.com/PrajwalWadekar/NxtResume/blob/main/outputs/Home.png)
 
-### 📝 Resume Builder Page
-![Resume Builder](https://via.placeholder.com/1000x600.png?text=Resume+Builder)
+### 📝Dashboard Page
+![Dashboard Page](https://github.com/PrajwalWadekar/NxtResume/blob/main/outputs/Dashboard.png)
 
 ### 📄 Resume Preview
-![Preview](https://via.placeholder.com/1000x600.png?text=Resume+Preview)
+![Preview](https://github.com/PrajwalWadekar/NxtResume/blob/main/outputs/Preview.png)
+
+### 📄 Resume 
+![Resume](https://github.com/PrajwalWadekar/NxtResume/blob/main/outputs/Resume.png)
 
 ---
 
