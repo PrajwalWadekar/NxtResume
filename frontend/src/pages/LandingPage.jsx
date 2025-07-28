@@ -264,7 +264,7 @@ const LandingPage = () => {
             <div className={landingPageStyles.featuresHeader}>
               <h2 className={landingPageStyles.featuresTitle}>
                 Why Choose <span className={landingPageStyles.featuresTitleGradient}>
-                  ResumeXpert?
+                  NxtResume?
                 </span>
               </h2>
 
