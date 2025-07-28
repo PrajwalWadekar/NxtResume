@@ -34,7 +34,7 @@ const LandingPage = () => {
             <div className={landingPageStyles.logoIcon}>
               <LayoutTemplate className={landingPageStyles.logoIconInner} />
             </div>
-            <span className={landingPageStyles.logoText}>ResumeXpert</span>
+            <span className={landingPageStyles.logoText}>NxtResume</span>
           </div>
 
           {/* Mobile Menu btn*/}
