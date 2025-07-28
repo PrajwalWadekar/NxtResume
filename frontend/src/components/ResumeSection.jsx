@@ -42,7 +42,7 @@ export const EducationInfo = ({ degree, institution, duration }) => (
   </div>
 );
 
-const InfoBlock = ({ label, progress, accentColor }) => (
+export const InfoBlock = ({ label, progress, accentColor }) => (
   <div className={styles.infoRow}>
     <p className={styles.infoLabel}>{label}</p>
     {progress > 0 && <Progress progress={(progress / 100) * 5} color={accentColor} />}

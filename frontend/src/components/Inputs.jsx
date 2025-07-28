@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Eye, EyeOff, Edit, Camera, Trash2,Check } from 'lucide-react';
 import { inputStyles, photoSelectorStyles, titleInputStyles } from '../assets/dummystyle';
 
-const Input = ({value, onChange, label, placeholder, type}) => {
+export const Input = ({value, onChange, label, placeholder, type}) => {
      const [showPassword,setShowPassword] = useState(false)
      const [isFocused, setIsFocused]=useState(false)
      const styles=inputStyles; 
